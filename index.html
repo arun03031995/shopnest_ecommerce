@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShopNest - A modern, high-quality e-commerce shopping experience for electronics, clothing, footwear, and books.">
+  <meta name="theme-color" content="#0f172a">
+  <title>ShopNest - Modern Online Shopping Store</title>
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#store-controls" class="skip-link">Skip to products</a>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container announcement-content">
+      <span>✨ <strong>Special Offer:</strong> Enjoy Free Express Delivery on all orders above ₹499!</span>
+      <span class="announcement-tag">100% Genuine Products</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo" aria-label="ShopNest Home">
+        <span class="logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+        </span>
+        <span class="logo-text">Shop<strong>Nest</strong></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#store-controls" class="nav-link">Shop</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#features" class="nav-link">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="cart-toggle-btn" class="cart-summary" type="button" aria-label="View shopping cart" aria-haspopup="dialog" aria-expanded="false">
+          <span class="cart-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+          </span>
+          <span class="cart-text">Cart</span>
+          <span id="cart-count" class="cart-badge" aria-label="Cart items count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span> New Season • Curated Collection
+        </div>
+        <h1>Discover Premium Essentials at Great Prices</h1>
+        <p class="hero-subtitle">
+          Explore handcrafted picks across trending electronics, quality clothing, durable footwear, and top-rated tech literature.
+        </p>
+        <div class="hero-actions">
+          <a href="#store-controls" class="btn btn-primary hero-btn">
+            <span>Shop Now</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#features" class="btn btn-secondary">Why ShopNest?</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <strong>12+</strong>
+            <span>Handpicked Items</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>4.8 ★</strong>
+            <span>Average Rating</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>100%</strong>
+            <span>Authentic Products</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-card-glow"></div>
+        <div class="hero-featured-card">
+          <div class="card-pill">Trending Deal</div>
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&auto=format&fit=crop&q=80" alt="Featured product showcase" class="hero-card-img" />
+          <div class="hero-card-details">
+            <span class="hero-card-cat">Electronics</span>
+            <h4>Wireless Headphones</h4>
+            <div class="hero-card-pricing">
+              <span class="hero-card-price">₹1,499.00</span>
+              <span class="hero-card-orig">₹1,999.00</span>
+              <span class="hero-card-disc">25% OFF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Strip -->
+  <section id="features" class="features-bar">
+    <div class="container features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">🚚</div>
+        <div>
+          <h4>Free Express Delivery</h4>
+          <p>Orders over ₹499 delivered fast</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔒</div>
+        <div>
+          <h4>Safe & Secure</h4>
+          <p>Verified trusted checkout</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">⭐</div>
+        <div>
+          <h4>Top Customer Care</h4>
+          <p>Dedicated 24/7 support team</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">🔄</div>
+        <div>
+          <h4>7-Day Free Returns</h4>
+          <p>Hassle-free return policy</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Store Section -->
+  <main class="container main-content">
+    
+    <!-- Store Controls: Live Search and Categories -->
+    <section id="store-controls" class="store-controls" aria-label="Product search and filters">
+      <div class="search-wrapper">
+        <label for="search-input" class="search-label">
+          <span class="search-icon" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </span>
+          <span class="sr-only">Search products</span>
+        </label>
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search products by name or category (e.g., headphones, shoes, shirt)..."
+          autocomplete="off"
+        >
+        <button id="clear-search-btn" class="clear-search-btn" type="button" aria-label="Clear search input" hidden>✕</button>
+      </div>
+
+      <div id="categories" class="categories-container">
+        <span class="categories-label">Categories:</span>
+        <div class="category-buttons" role="tablist" aria-label="Product categories">
+          <button class="category-btn active" data-category="All" role="tab" aria-selected="true">
+            <span class="cat-icon">⚡</span> All Items
+          </button>
+          <button class="category-btn" data-category="Electronics" role="tab" aria-selected="false">
+            <span class="cat-icon">🎧</span> Electronics
+          </button>
+          <button class="category-btn" data-category="Clothing" role="tab" aria-selected="false">
+            <span class="cat-icon">👕</span> Clothing
+          </button>
+          <button class="category-btn" data-category="Footwear" role="tab" aria-selected="false">
+            <span class="cat-icon">👟</span> Footwear
+          </button>
+          <button class="category-btn" data-category="Books" role="tab" aria-selected="false">
+            <span class="cat-icon">📚</span> Books
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Store Layout: Catalog & Cart -->
+    <section class="store-layout">
+      <!-- Products Section -->
+      <section class="products-section" aria-labelledby="catalog-heading">
+        <div class="section-header">
+          <div>
+            <h2 id="catalog-heading">Our Products</h2>
+            <p id="results-count" class="results-count" aria-live="polite">Loading products...</p>
+          </div>
+        </div>
+
+        <!-- Dynamic Product Grid -->
+        <div id="products-container" class="products-grid" aria-live="polite"></div>
+
+        <!-- Loading State -->
+        <div id="loading-message" class="state-card loading-state">
+          <div class="spinner" aria-hidden="true"></div>
+          <p>Loading fresh products from ShopNest catalog...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="error-message" class="state-card error-state" hidden>
+          <div class="state-icon" aria-hidden="true">⚠️</div>
+          <h3>Failed to Load Products</h3>
+          <p id="error-text">Products could not be loaded. Please run the project using a local server.</p>
+          <button id="retry-btn" class="btn btn-primary" type="button">Try Again</button>
+        </div>
+
+        <!-- No Products Found State -->
+        <div id="no-products" class="state-card no-products-state" hidden>
+          <div class="state-icon" aria-hidden="true">🔍</div>
+          <h3>No matching products found</h3>
+          <p>We couldn't find anything matching your search and filter criteria. Try adjusting your query or resetting filters.</p>
+          <button id="reset-filters-btn" class="btn btn-primary" type="button">Reset All Filters</button>
+        </div>
+      </section>
+
+      <!-- Cart Aside (Desktop sticky panel / Mobile slide-over drawer) -->
+      <aside id="cart-panel" class="cart-panel" aria-label="Shopping Cart">
+        <div class="cart-header">
+          <div class="cart-title-wrapper">
+            <h2>Your Cart</h2>
+            <span id="cart-drawer-count" class="cart-pill-count">0 items</span>
+          </div>
+          <button id="close-cart-btn" class="close-cart-btn" type="button" aria-label="Close shopping cart">✕</button>
+        </div>
+
+        <!-- Cart Items List Container -->
+        <div id="cart-items" class="cart-items" aria-live="polite">
+          <div class="empty-cart-state">
+            <div class="empty-cart-icon" aria-hidden="true">🛒</div>
+            <p class="empty-cart-title">Your cart is empty</p>
+            <p class="empty-cart-sub">Looks like you haven't added any products to your cart yet.</p>
+          </div>
+        </div>
+
+        <!-- Cart Financials -->
+        <div class="cart-footer">
+          <div class="cart-summary-breakdown">
+            <div class="summary-line">
+              <span>Subtotal</span>
+              <span id="cart-subtotal">₹0.00</span>
+            </div>
+            <div class="summary-line">
+              <span>Delivery</span>
+              <span class="delivery-free">FREE</span>
+            </div>
+            <div class="cart-total-row">
+              <strong>Total:</strong>
+              <strong id="cart-total">₹0.00</strong>
+            </div>
+          </div>
+
+          <div class="cart-actions">
+            <button id="checkout-btn" class="btn checkout-btn" type="button">
+              <span>Proceed to Checkout</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+            <button id="clear-cart" class="clear-cart-btn" type="button">
+              Clear Cart
+            </button>
+          </div>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <!-- Cart Drawer Overlay (for Mobile / responsive slide-over) -->
+  <div id="cart-backdrop" class="cart-backdrop" aria-hidden="true"></div>
+
+  <!-- Checkout Demo Notice Modal -->
+  <dialog id="checkout-modal" class="checkout-modal" aria-labelledby="modal-title">
+    <div class="modal-content">
+      <div class="modal-icon" aria-hidden="true">🛍️</div>
+      <h3 id="modal-title">ShopNest Demo Store</h3>
+      <p>Thank you for exploring ShopNest! This is an educational demonstration project. No real payments are processed and no products will be shipped.</p>
+      <div class="modal-order-summary">
+        <span>Order Amount:</span>
+        <strong id="modal-total">₹0.00</strong>
+      </div>
+      <button id="modal-close-btn" class="btn btn-primary" type="button">Got it, back to shopping</button>
+    </div>
+  </dialog>
+
+  <!-- Live Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite"></div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <path d="M16 10a4 4 0 0 1-8 0"></path>
+            </svg>
+          </span>
+          <span class="logo-text">Shop<strong>Nest</strong></span>
+        </div>
+        <p class="footer-desc">
+          Your premier online destination for electronics, modern apparel, comfortable footwear, and programming literature.
+        </p>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#store-controls" class="footer-filter-link" data-category="Electronics">Electronics</a></li>
+          <li><a href="#store-controls" class="footer-filter-link" data-category="Clothing">Clothing</a></li>
+          <li><a href="#store-controls" class="footer-filter-link" data-category="Footwear">Footwear</a></li>
+          <li><a href="#store-controls" class="footer-filter-link" data-category="Books">Books</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Customer Care</h4>
+        <ul>
+          <li><a href="#hero">Terms of Service</a></li>
+          <li><a href="#hero">Privacy Policy</a></li>
+          <li><a href="#hero">Shipping & Returns</a></li>
+          <li><a href="#hero">Help Center</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-links-group">
+        <h4>Safe Shopping</h4>
+        <p class="footer-trust-text">🔒 256-bit SSL encryption. All rights reserved.</p>
+        <p class="footer-copy">© 2026 ShopNest. Built with vanilla HTML, CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
